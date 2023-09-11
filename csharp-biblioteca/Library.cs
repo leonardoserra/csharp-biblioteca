@@ -10,11 +10,11 @@ namespace csharp_biblioteca
     {   
         public List<Document> Documents { get; private set; }
         public List<User> Users { get; private set; }
-        public Dictionary<User,Document> Rentals { get; private set; }
+        public List<Rental> Rentals { get; private set; }
         public Library() {
             Documents = new List<Document>();
             Users = new List<User>();
-            Rentals = new Dictionary<User, Document>();
+            Rentals = new List<Rental>();
         }
 
         //metodi per aggiungere alle liste
@@ -26,9 +26,9 @@ namespace csharp_biblioteca
         {
             this.Users.Add(user);
         }
-        public void AddRentalInLibrary(User user, Document document)
+        public void AddRentalInLibrary(Rental rental)
         {
-            this.Rentals.Add(user,document);
+            this.Rentals.Add(rental);
         }
 
     }

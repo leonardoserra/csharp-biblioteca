@@ -20,6 +20,15 @@
             Console.WriteLine(agenteSpecialeBonolis.ToString());
             Console.WriteLine();
 
+            Library bibliotecaComunale = new Library();
+
+            bibliotecaComunale.AddDocumentInLibrary(servizioStrisciaLaNotizia);
+            //crea su user un metodo che cicla la lista di documenti e la stampa 
+            gimmighione.SearchDocument("Storia del Cinepanettone", bibliotecaComunale.Documents);
+
+
+
+
 
         }
     }

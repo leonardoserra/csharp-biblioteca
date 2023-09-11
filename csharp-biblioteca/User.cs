@@ -23,6 +23,29 @@ namespace csharp_biblioteca
             this.PhoneNumber = phoneNumber;
         }
 
+        //metodi
+        public void SearchDocument(string titleToSearch, List<Document> documentList)
+        {
+
+            Console.WriteLine("Risultati ricerca: \n");
+            foreach (var document in documentList)
+            {
+                if(titleToSearch == document.Title)
+                {
+                    Console.WriteLine(document.ToString());
+                }
+                else
+                {
+                    Console.WriteLine("Nessun risultato trovato");
+
+                }
+            }
+
+
+
+
+            
+        }
         public override string ToString()
         {
             return $"Heilà amici di Striscia, da Cologno Monzese è tutto!\n\tIo sono: {this.LastName} {this.Name}!\n\tLa mia email è: {this.Email}\n\tLa mia password é: {this.Password}\n\tVideochiamami! -> {this.PhoneNumber}";
