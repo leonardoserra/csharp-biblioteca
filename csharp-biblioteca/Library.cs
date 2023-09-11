@@ -34,16 +34,26 @@ namespace csharp_biblioteca
 
         public void PrintAllDocuments()
         {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("-------------------LISTA DOCUMENTI BIBLIOTECA--------------");
+
             foreach (Document document in this.Documents)
             {
-                document.ToString();
+                Console.WriteLine(document.ToString());
             }
         }
         public void PrintAllRentals()
         {
-            foreach(Rental rental in this.Rentals)
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("-------------------LISTA PRESTITI--------------");
+
+            foreach (Rental rental in this.Rentals)
             {
-                rental.ToString();
+                Console.WriteLine(rental.ToString());
             }
         }
 

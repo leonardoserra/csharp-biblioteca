@@ -41,7 +41,7 @@ namespace csharp_biblioteca
 
         }
 
-        public void rentDocument(string documentName, DateTime endingDate, Library library)
+        public void rentDocument(string documentName, string endingDate, Library library)
         {
             Rental rent = new Rental(this.LastName,this.Name,documentName, endingDate);
             library.AddRentalInLibrary(rent);

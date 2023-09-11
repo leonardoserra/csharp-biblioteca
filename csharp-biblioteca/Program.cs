@@ -19,7 +19,11 @@
             bibliotecaComunale.AddDocumentInLibrary(agenteSpecialeBonolis);
             
             gimmighione.SearchDocument("00283991" ,"Cuccioli di cinghiale a Cologno Monzese (feat.Boldi)", bibliotecaComunale.Documents);
-
+            storiaDelCinepanettone.ToString();
+            bibliotecaComunale.PrintAllDocuments();
+            gimmighione.rentDocument("Agente Speciale Bonolis", "25 Marzo 2023", bibliotecaComunale);
+            yoda.rentDocument("Cuccioli di cinghiale a Cologno Monzese (feat.Boldi)", "28 Novembre 2023", bibliotecaComunale);
+            bibliotecaComunale.PrintAllRentals();
 
 
 

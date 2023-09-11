@@ -16,7 +16,7 @@ namespace csharp_biblioteca
 
         public override string ToString()
         {
-            return $"Info libro: \n\tCodice: {this.IdCode}\n\tTitolo: {this.Title}\n\tAnno di produzione: {this.ProductionYear}\n\tGenere/Settore: {this.Sector}\n\tScaffale: {this.Rack}\n\tAutore: {this.Author}\n\tDurata filmato in minuti: {this.TimeDuration}";
+            return $"Info DVD: \n\tCodice: {this.IdCode}\n\tTitolo: {this.Title}\n\tAnno di produzione: {this.ProductionYear}\n\tGenere/Settore: {this.Sector}\n\tScaffale: {this.Rack}\n\tAutore: {this.Author}\n\tDurata filmato in minuti: {this.TimeDuration}";
         }
     }
 }
