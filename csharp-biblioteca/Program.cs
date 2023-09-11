@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            User gimmighione = new User("Ghione", "Gimmi", "gghione@gmail.ghione", "castoroMolesto2023!","392-2378755");
+            Console.WriteLine(gimmighione.ToString());
         }
     }
 }
