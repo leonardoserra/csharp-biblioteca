@@ -23,8 +23,8 @@
 
             gimmighione.SearchDocument("00283991" ,"Cuccioli di cinghiale a Cologno Monzese (feat.Boldi)", bibliotecaComunale.Documents);
 
-            gimmighione.rentDocument("Agente Speciale Bonolis", bibliotecaComunale);
-            yoda.rentDocument("Cuccioli di cinghiale a Cologno Monzese (feat.Boldi)", bibliotecaComunale);
+            gimmighione.RentDocument("Agente Speciale Bonolis", bibliotecaComunale);
+            yoda.RentDocument("Cuccioli di cinghiale a Cologno Monzese (feat.Boldi)", bibliotecaComunale);
 
             bibliotecaComunale.PrintAllRentals();
         }
