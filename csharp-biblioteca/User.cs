@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,27 +25,20 @@ namespace csharp_biblioteca
         }
 
         //metodi
-        public void SearchDocument(string titleToSearch, List<Document> documentList)
+        public void SearchDocument(string idToSearch, string titleToSearch, List<Document> documentList)
         {
-
-            Console.WriteLine("Risultati ricerca: \n");
+            Console.WriteLine("---------Risultati ricerca:---------");
+            Console.WriteLine();
             foreach (var document in documentList)
             {
-                if(titleToSearch == document.Title)
+                if (idToSearch == document.IdCode || titleToSearch == document.Title)
                 {
                     Console.WriteLine(document.ToString());
                 }
-                else
-                {
-                    Console.WriteLine("Nessun risultato trovato");
-
-                }
             }
+            Console.WriteLine();
+            Console.WriteLine("--------Fine Ricerca--------");
 
-
-
-
-            
         }
         public override string ToString()
         {

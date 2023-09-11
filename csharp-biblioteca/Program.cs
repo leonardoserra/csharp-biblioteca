@@ -5,26 +5,20 @@
         static void Main(string[] args)
         {
             User gimmighione = new User("Ghione", "Gimmi", "gghione@gmail.ghione", "castoroMolesto2023!","392-2378755");
-            Console.WriteLine(gimmighione.ToString());
-            Console.WriteLine();
-
+            User yoda = new User("Maestro", "Yoda", "com@yoda.maestro", "0987654321", "505050505");
             Document servizioStrisciaLaNotizia = new Document("Cuccioli di cinghiale a Cologno Monzese (feat.Boldi)", 1992, "Cronaca Comica", 78, "Splash Editorial");
-            Console.WriteLine(servizioStrisciaLaNotizia.ToString());
-            Console.WriteLine();
-
             Book storiaDelCinepanettone = new Book("Storia del Cinepanettone", 2020, "Storia", 165, "MEDUSA", 256);
-            Console.WriteLine(storiaDelCinepanettone.ToString());
-            Console.WriteLine();
-
             DVD agenteSpecialeBonolis = new DVD("Agente Speciale Bonolis", 1999, "Azione/Drammatico", 12, "DeLaurentis Production", 178);
-            Console.WriteLine(agenteSpecialeBonolis.ToString());
-            Console.WriteLine();
-
             Library bibliotecaComunale = new Library();
 
+            bibliotecaComunale.AddUserInLibrary(gimmighione);
+            bibliotecaComunale.AddUserInLibrary(yoda);
+
             bibliotecaComunale.AddDocumentInLibrary(servizioStrisciaLaNotizia);
-            //crea su user un metodo che cicla la lista di documenti e la stampa 
-            gimmighione.SearchDocument("Storia del Cinepanettone", bibliotecaComunale.Documents);
+            bibliotecaComunale.AddDocumentInLibrary(storiaDelCinepanettone);
+            bibliotecaComunale.AddDocumentInLibrary(agenteSpecialeBonolis);
+            
+            gimmighione.SearchDocument("00283991" ,"Cuccioli di cinghiale a Cologno Monzese (feat.Boldi)", bibliotecaComunale.Documents);
 
 
 
