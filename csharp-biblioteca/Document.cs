@@ -8,12 +8,12 @@ namespace csharp_biblioteca
 {
     internal class Document
     {
-        public string IdCode { get; private set; }
-        public string Title { get;  set; }
-        public uint ProductionYear { get; set; }
-        public string Sector { get; set; }
-        public uint Rack { get; set; }
-        public string Author { get; set; }
+        internal string IdCode { get; private set; }
+        internal string Title { get;  set; }
+        internal uint ProductionYear { get; set; }
+        internal string Sector { get; set; }
+        internal uint Rack { get; set; }
+        internal string Author { get; set; }
 
         public Document(string title, uint productionYear, string sector, uint rack, string author) {
             this.IdCode = "n." + Random.Shared.Next(0, 99999).ToString("D8");
