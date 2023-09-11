@@ -7,8 +7,11 @@ Gli utenti si possono registrare al sistema, fornendo:
 - nome  
 - email  
 - password  
-- recapito telefonico  
+- recapito telefonico
+
+  
 Gli utenti registrati possono prendere in prestito dei documenti che sono di vario tipo (libri, DVD).  
+  
 I documenti sono caratterizzati da:  
 - un codice identificativo di tipo stringa  
 - titolo  
