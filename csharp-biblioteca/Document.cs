@@ -16,7 +16,7 @@ namespace csharp_biblioteca
         public string Author { get; set; }
 
         public Document(string title, uint productionYear, string sector, uint rack, string author) {
-            this.IdCode = "DOCUMENT n." + Random.Shared.Next(0, 99999).ToString();
+            this.IdCode = "n." + Random.Shared.Next(0, 99999).ToString();
             this.Title = title;
             this.ProductionYear = productionYear;
             this.Sector = sector;
