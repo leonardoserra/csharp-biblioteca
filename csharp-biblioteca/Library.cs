@@ -8,15 +8,28 @@ namespace csharp_biblioteca
 {
     internal class Library
     {   
-        private List<Document> Documents { get; }
-        private List<User> Users { get; }
-        private List<Rental> Rentals { get; }
+        public List<Document> Documents { get; private set; }
+        public List<User> Users { get; private set; }
+        public Dictionary<User,Document> Rentals { get; private set; }
         public Library() {
             Documents = new List<Document>();
             Users = new List<User>();
-            Rentals = new List<Rental>();
+            Rentals = new Dictionary<User, Document>();
         }
 
+        //metodi per aggiungere alle liste
+        public void AddDocumentInLibrary(Document document)
+        {
+            this.Documents.Add(document);
+        }
+        public void AddUserInLibrary(User user)
+        {
+            this.Users.Add(user);
+        }
+        public void AddRentalInLibrary(User user, Document document)
+        {
+            this.Rentals.Add(user,document);
+        }
 
     }
 }
