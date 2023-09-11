@@ -32,6 +32,13 @@ namespace csharp_biblioteca
             this.Rentals.Add(rental);
         }
 
+        public void PrintAllDocuments()
+        {
+            foreach (Document document in this.Documents)
+            {
+                document.ToString();
+            }
+        }
         public void PrintAllRentals()
         {
             foreach(Rental rental in this.Rentals)

@@ -6,8 +6,8 @@
     public string UserName {  get; private set; }
     public string DocumentTitle { get; private set; }
     public DateTime StartingDate{  get; private set; }
-    public DateTime EndingDate {  get; private set; }
-        public Rental(string userLastName, string userName, string documentTitle, DateTime endingDate) {
+    public string EndingDate {  get; private set; }
+        public Rental(string userLastName, string userName, string documentTitle, string endingDate) {
             this.UserLastName = userLastName;
             this.UserName = userName;
             this.DocumentTitle = documentTitle;
