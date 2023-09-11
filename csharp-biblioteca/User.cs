@@ -40,6 +40,12 @@ namespace csharp_biblioteca
             Console.WriteLine("--------Fine Ricerca--------");
 
         }
+
+        public void rentDocument(string documentName, DateTime endingDate, Library library)
+        {
+            Rental rent = new Rental(this.LastName,this.Name,documentName, endingDate);
+            library.AddRentalInLibrary(rent);
+        }
         public override string ToString()
         {
             return $"Heilà amici di Striscia, da Cologno Monzese è tutto!\n\tIo sono: {this.LastName} {this.Name}!\n\tLa mia email è: {this.Email}\n\tLa mia password é: {this.Password}\n\tVideochiamami! -> {this.PhoneNumber}";
