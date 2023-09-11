@@ -14,5 +14,10 @@
             this.StartingDate = DateTime.Now;
             this.EndingDate = endingDate;
         }
+        public override string ToString()
+        {
+            return $"\n ------------\nUtente: {UserLastName} {UserName},\nDocumento {DocumentTitle}\nData Inizio Noleggio: {StartingDate}\nData Fine Noleggio: {EndingDate}\n\n\n";
+        }
     }
+
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,6 +30,14 @@ namespace csharp_biblioteca
         public void AddRentalInLibrary(Rental rental)
         {
             this.Rentals.Add(rental);
+        }
+
+        public void PrintAllRentals()
+        {
+            foreach(Rental rental in this.Rentals)
+            {
+                rental.ToString();
+            }
         }
 
     }
