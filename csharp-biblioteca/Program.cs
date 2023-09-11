@@ -16,6 +16,10 @@
             Console.WriteLine(storiaDelCinepanettone.ToString());
             Console.WriteLine();
 
+            DVD agenteSpecialeBonolis = new DVD("Agente Speciale Bonolis", 1999, "Azione/Drammatico", 12, "DeLaurentis Production", 178);
+            Console.WriteLine(agenteSpecialeBonolis.ToString());
+            Console.WriteLine();
+
 
         }
     }
