@@ -48,7 +48,7 @@ namespace csharp_biblioteca
         }
         public override string ToString()
         {
-            return $"Heilà amici di Striscia, da Cologno Monzese è tutto!\n\tIo sono: {this.LastName} {this.Name}!\n\tLa mia email è: {this.Email}\n\tLa mia password é: {this.Password}\n\tVideochiamami! -> {this.PhoneNumber}";
+            return $"\n\tIo sono: {this.LastName} {this.Name}!\n\tLa mia email è: {this.Email}\n\tLa mia password é: {this.Password}\n\tVideochiamami! -> {this.PhoneNumber}";
         }
     }
 }

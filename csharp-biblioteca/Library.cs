@@ -44,6 +44,18 @@ namespace csharp_biblioteca
                 Console.WriteLine(document.ToString());
             }
         }
+        public void PrintAllUsers()
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("-------------------LISTA UTENTI BIBLIOTECA--------------");
+
+            foreach (User user in this.Users)
+            {
+                Console.WriteLine(user.ToString());
+            }
+        }
         public void PrintAllRentals()
         {
             Console.WriteLine();
